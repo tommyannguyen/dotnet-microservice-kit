@@ -5,7 +5,7 @@ The goal is to build a framework that can make building microservices in dotnet 
 
 # Table of Contents
 
-- [.NET Microservices Boilerplate](#net-microservices-boilerplate)
+- [dotnet Microservices Kit](#net-microservices-boilerplate)
 - [Table of Contents](#table-of-contents)
   - [Goals](#goals)
   - [FluentPos](#fluentpos)
@@ -38,7 +38,8 @@ The goal is to build a framework that can make building microservices in dotnet 
 - :sparkle: Using `Zipkin` for distributed tracing.
 - :sparkle: Using `OpenIddict` for authentication and authorization base on `OpenID-Connect` and `OAuth2`.
 - :sparkle: Using `Yarp` as a microservices gateway.
-- :sparkle: Multi-Tenancies
+- :sparkle: Multitenancy
+- :sparkle: Service template
 
 ## Project core base
 
