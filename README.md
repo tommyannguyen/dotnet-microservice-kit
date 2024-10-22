@@ -43,7 +43,7 @@ The goal is to build a framework that can make building microservices in dotnet 
 
 ## Project core base
 
-"Project core base" is a sample project that consumes the microservice framework. You will learn a lot by exploring this project, which is located under the `./fluentpos` folder.
+"Project core base" is a sample project that consumes the microservice framework. You will learn a lot by exploring this project.
 
 
 | Services          | Status         |
