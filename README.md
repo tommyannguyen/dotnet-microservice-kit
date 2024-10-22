@@ -59,7 +59,7 @@ The goal is to build a framework that can make building microservices in dotnet 
 ## How to Run ?
 
 ### Tye
-Tye is a super-awesome way to run your applications quickly. The `fluentpos` project already has this support. Simply run the following at the `./fluentpos` directory :
+Tye is a super-awesome way to run your applications quickly. T
 
 ```
 make tye
@@ -73,7 +73,7 @@ This will spin up all the services required.
 - Catalog Service will be available on `https://localhost:7003`.
 
 ### Docker & Docker-Compose
-The `fluentpos` project comes included with the required docker-compose.yaml and makefile file for your reference.
+The project comes included with the required docker-compose.yaml and makefile file for your reference.
 
 There are some prerequisites for using these included docker-compose.yml files:
 
@@ -134,7 +134,6 @@ make docker-down
 
 
 ## Changelogs
-
 
 ## Community
 
