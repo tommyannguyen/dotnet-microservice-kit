@@ -5,7 +5,7 @@ using MongoDB.Driver.Linq;
 namespace DotMK.Framework.Persistence.Mongo;
 public static class QueryableExtensions
 {
-    public static async Task<PagedList<T>> ApplyPagingAsync<T>(this IMongoQueryable<T> collection, int page = 1, int resultsPerPage = 10, CancellationToken cancellationToken = default)
+    public static async Task<PagedList<T>> ApplyPagingAsync<T>(this IQueryable<T> collection, int page = 1, int resultsPerPage = 10, CancellationToken cancellationToken = default)
     {
         if (page <= 0) page = 1;
         if (resultsPerPage <= 0) resultsPerPage = 10;
@@ -16,7 +16,7 @@ public static class QueryableExtensions
         var data = collection.Skip(skipSize).Take(resultsPerPage).ToList();
         return new PagedList<T>(data, totalItems, page, resultsPerPage);
     }
-    public static async Task<PagedList<TDto>> ApplyPagingAsync<T, TDto>(this IMongoQueryable<T> collection, int page = 1, int resultsPerPage = 10, CancellationToken cancellationToken = default)
+    public static async Task<PagedList<TDto>> ApplyPagingAsync<T, TDto>(this IQueryable<T> collection, int page = 1, int resultsPerPage = 10, CancellationToken cancellationToken = default)
     {
         if (page <= 0) page = 1;
         if (resultsPerPage <= 0) resultsPerPage = 10;

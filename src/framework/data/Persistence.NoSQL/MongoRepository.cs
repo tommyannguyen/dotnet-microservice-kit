@@ -3,6 +3,7 @@ using DotMK.Framework.Core.Database;
 using DotMK.Framework.Core.Domain;
 using DotMK.Framework.Core.Services;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 
 namespace DotMK.Framework.Persistence.Mongo;
 public class MongoRepository<TDocument, TId> : IRepository<TDocument, TId> where TDocument : class, IBaseEntity<TId>
