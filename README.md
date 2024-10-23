@@ -113,7 +113,7 @@ To bring down all the `DotMK` container, simply run the following.
 make docker-down
 ```
 
-*Note that the default Docker Images that will be pulled are from my public Image Repository (for eg, `iammukeshm/DotMK.identity:latest`). You can switch it your variants if required.*
+*Note that the default Docker Images that will be pulled are from my public Image Repository (for eg, `dotnet-microservice-kit/DotMK.identity:latest`). You can switch it your variants if required.*
 
 ## Technologies & Libraries
 

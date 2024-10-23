@@ -4,7 +4,7 @@ name: DotMK
 services:
   gateway:
     container_name: gateway
-    image: iammukeshm/DotMK.gateway:latest
+    image: dotnet-microservice-kit/DotMK.gateway:latest
     ports:
       - 7002:7002
       - 5002:5002
@@ -20,7 +20,7 @@ services:
      - DotMK
   identity:
     container_name: identity
-    image: iammukeshm/DotMK.identity:latest
+    image: dotnet-microservice-kit/DotMK.identity:latest
     environment:
       - ASPNETCORE_ENVIRONMENT=docker
     depends_on:
@@ -30,7 +30,7 @@ services:
      - DotMK
   catalog:
     container_name: catalog
-    image: iammukeshm/DotMK.catalog:latest
+    image: dotnet-microservice-kit/DotMK.catalog:latest
     depends_on:
       - mongo
     environment:
@@ -39,7 +39,7 @@ services:
      - DotMK
   cart:
     container_name: cart
-    image: iammukeshm/DotMK.cart:latest
+    image: dotnet-microservice-kit/DotMK.cart:latest
     environment:
       - ASPNETCORE_ENVIRONMENT=docker
     networks:
