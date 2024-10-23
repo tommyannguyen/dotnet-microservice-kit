@@ -8,7 +8,7 @@ The goal is to build a framework that can make building microservices in dotnet 
 - [dotnet Microservices Kit](#net-microservices-boilerplate)
 - [Table of Contents](#table-of-contents)
   - [Goals](#goals)
-  - [FluentPos](#fluentpos)
+  - [DotMK](#DotMK)
   - [How to Run ?](#how-to-run-)
     - [Tye](#tye)
     - [Docker \& Docker-Compose](#docker--docker-compose)
@@ -99,7 +99,7 @@ There are some prerequisites for using these included docker-compose.yml files:
     ```
      dotnet dev-certs https --trust
     ```
-Once your certificate is trusted, simply navigate into the `./fluentpos` folder of the project and run the following command.
+Once your certificate is trusted, simply navigate into the `./DotMK` folder of the project and run the following command.
 
 ```
 make docker-up
@@ -107,13 +107,13 @@ make docker-up
 
 This will spin up all the containers required. Your Gateway URL will be available on `https://localhost:7002`.
 
-To bring down all the `fluentpos` container, simply run the following.
+To bring down all the `DotMK` container, simply run the following.
 
 ```
 make docker-down
 ```
 
-*Note that the default Docker Images that will be pulled are from my public Image Repository (for eg, `iammukeshm/fluentpos.identity:latest`). You can switch it your variants if required.*
+*Note that the default Docker Images that will be pulled are from my public Image Repository (for eg, `iammukeshm/DotMK.identity:latest`). You can switch it your variants if required.*
 
 ## Technologies & Libraries
 

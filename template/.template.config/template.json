@@ -31,7 +31,8 @@
           "exclude": [
             "README.md",
             ".git/**",
-            ".vs/**"
+            ".vs/**",
+             "*.png"
           ]
         }
       ],
