@@ -157,3 +157,6 @@ Here are a few ways by which you can support.
 
 This project exists thanks to all the people who contribute.
 
+## References
+[Template](https://github.com/thirschel/dotnet-cqrs-microservice-template)
+

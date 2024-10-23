@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "An Nguyen",
+  "classifications": ["DotMK Templates"],
+  "identity": "Dotnet Microservice Kit",
+  "name": "Dotnet Microservice Kit",
+  "shortName": "dot-mk",
+  "tags": {
+    "language": "C#, dotnet8, dotnet9",
+    "type": "project"
+  },
+  "symbols": {
+    "projectName": {
+      "type": "parameter",
+      "dataType": "string",
+      "replaces": "PROJECT_NAME",
+      "fileRename": "PROJECT_NAME",
+      "isRequired": true
+    },
+    "repoName": {
+      "type": "parameter",
+      "dataType": "string",
+      "replaces": "REPO_NAME",
+      "isRequired": true
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            "README.md",
+            ".git/**",
+            ".vs/**"
+          ]
+        }
+      ],
+      "rename": {"__README.md":"README.md"}
+    }
+  ]
+}
