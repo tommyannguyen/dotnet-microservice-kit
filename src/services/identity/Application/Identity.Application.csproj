@@ -21,7 +21,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\framework\Core\DotMK.Framework.Core.csproj" />
-      <ProjectReference Include="..\Domain\Domain.csproj" />
+      <ProjectReference Include="..\Domain\Identity.Domain.csproj" />
     </ItemGroup>
 
 </Project>

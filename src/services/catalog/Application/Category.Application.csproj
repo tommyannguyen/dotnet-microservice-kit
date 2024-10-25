@@ -15,7 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\events\Events.csproj" />
     <ProjectReference Include="..\..\..\framework\Core\DotMK.Framework.Core.csproj" />
-    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Domain\Category.Domain.csproj" />
   </ItemGroup>
 
 </Project>

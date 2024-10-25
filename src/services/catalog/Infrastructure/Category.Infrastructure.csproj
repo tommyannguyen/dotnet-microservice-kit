@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -12,8 +12,8 @@
     <ProjectReference Include="..\..\..\framework\Core\DotMK.Framework.Core.csproj" />
     <ProjectReference Include="..\..\..\framework\data\Persistence.NoSQL\DotMK.Framework.Persistence.Mongo.csproj" />
     <ProjectReference Include="..\..\..\framework\Infrastructure\DotMK.Framework.Infrastructure.csproj" />
-    <ProjectReference Include="..\Application\Application.csproj" />
-    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Application\Category.Application.csproj" />
+    <ProjectReference Include="..\Domain\Category.Domain.csproj" />
   </ItemGroup>
 
 </Project>

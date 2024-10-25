@@ -17,14 +17,20 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\Application\Application.csproj" />
-	  <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+	  <ProjectReference Include="..\Application\Identity.Application.csproj" />
+	  <ProjectReference Include="..\Infrastructure\Identity.Infrastructure.csproj" />
 	</ItemGroup>
     <PropertyGroup>
         <ContainerImageName>DotMK.identity</ContainerImageName>
         <ContainerImageTags>1.0.0;latest</ContainerImageTags>
         <PublishProfile>DefaultContainer</PublishProfile>
+        <UserSecretsId>7a6bee6c-b534-4e8d-87f4-0265cab2b4ee</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <DockerfileContext>..\..\..</DockerfileContext>
+        <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
+        <IsServiceFabricServiceProject>True</IsServiceFabricServiceProject>
     </PropertyGroup>
 </Project>

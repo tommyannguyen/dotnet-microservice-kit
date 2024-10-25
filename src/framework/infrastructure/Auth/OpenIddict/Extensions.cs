@@ -32,7 +32,9 @@ public static class Extensions
         return services;
     }
 
-    public static void ConfigureAuthServer<T>(this WebApplicationBuilder builder, Assembly dbContextAssembly, string connectionName = "DefaultConnection") where T : DbContext
+    public static void ConfigureAuthServer<T>(this WebApplicationBuilder builder,
+        Assembly dbContextAssembly,
+        string connectionName = "DefaultConnection") where T : DbContext
     {
         builder.Services.AddOpenIddict()
         .AddCore(options => options.UseEntityFrameworkCore().UseDbContext<T>())

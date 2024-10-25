@@ -19,7 +19,7 @@ public static class Extensions
 
         builder.Services.AddIdentityExtensions();
         builder.AddInfrastructure(applicationAssembly: coreAssembly, enableSwagger: enableSwagger);
-        builder.ConfigureAuthServer<AppDbContext>(dbContextAssembly);
+        builder.ConfigureAuthServer<AppDbContext>(dbContextAssembly, "postgresdb");
         builder.Services.AddHostedService<SeedClientsAndScopes>();
     }
 

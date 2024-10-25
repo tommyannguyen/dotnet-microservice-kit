@@ -9,12 +9,20 @@
         <EnableSdkContainerSupport>true</EnableSdkContainerSupport>
     </PropertyGroup>
     <ItemGroup>
-      <ProjectReference Include="..\Application\Application.csproj" />
-      <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+      <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Category.Application.csproj" />
+      <ProjectReference Include="..\Infrastructure\Category.Infrastructure.csproj" />
     </ItemGroup>
     <PropertyGroup>
         <ContainerImageName>DotMK.catalog</ContainerImageName>
         <ContainerImageTags>1.0.0;latest</ContainerImageTags>
         <PublishProfile>DefaultContainer</PublishProfile>
+        <UserSecretsId>fdbad107-2557-4cca-9487-cb240ee6c231</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <DockerfileContext>..\..\..</DockerfileContext>
+        <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
+        <IsServiceFabricServiceProject>True</IsServiceFabricServiceProject>
     </PropertyGroup>
 </Project>
